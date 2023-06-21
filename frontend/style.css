@@ -1,4 +1,134 @@
-.todo {
-  border: 1px solid red;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap");
+* {
+  font-family: Martel Sans, Sans-serif;
+}
+.container {
+  border: 1px solid rgb(106, 106, 106);
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  box-shadow: 0px 0px 24px 0px rgba(63, 63, 64, 0.665);
+  position: relative;
+  width: 370px;
+  height: auto;
+  background: #ffffff;
+  border-radius: 50px;
+}
+
+Body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.nasze-todosy-container {
+  width: 100%;
+}
+.add-todo-btn {
+  width: 60px;
+  height: 40px;
+  font-size: 15px;
+}
+.add-todo-btn:hover {
+  color: green;
+  background-color: rgb(135, 203, 135);
+  transform: scale(1.1);
+  transition: 200ms;
+}
+
+p {
+  margin-top: 25px;
   margin-bottom: 5px;
+  height: 40px;
+  padding-left: 15px;
+  font-weight: 400;
+  border: 0.5px solid grey;
+  border-radius: 8px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+p:hover {
+  transform: scale(1.05);
+  transition: 150ms;
+}
+div.todo {
+  width: 100%;
+}
+button {
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1.5px solid black;
+  height: 25px;
+  width: fit-content;
+  font-weight: 400;
+  margin: 2px;
+  text-align: center;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(195, 195, 195);
+  transform: scale(1.1);
+  transition: 150ms;
+}
+
+.input-todo {
+  box-sizing: border-box;
+  position: center;
+  width: 300px;
+  height: 40px;
+  left: 45px;
+  top: 125px;
+  border: 1px solid #0c0c0c;
+  border-radius: 10px;
+  font-size: 18px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+h1 {
+  font-weight: 500;
+  font-size: 35px;
+}
+
+form {
+  background-color: rgba(218, 20, 20, 0);
+  width: 100%;
+  align-content: flex-end;
+}
+
+.line {
+  text-decoration: line-through;
+  color: green;
+  border-color: green;
+  border: 2px solid;
+}
+
+img {
+  width: 385px;
+  margin-top: 15px;
+  margin-left: -5px;
+  margin-right: 0px;
+}
+div.todo :last-child {
+  background-color: rgb(223, 74, 74);
+  color: white;
+  border-color: rgb(177, 5, 5);
+}
+div.todo :last-child:hover {
+  transform: scale(1.1);
+  transition: 150ms;
+}
+main > button:last-child {
+  float: right;
+  bottom: 0;
+  margin-top: 20px;
+}
+::placeholder {
+  color: rgb(184, 182, 182);
+}
+.add-todo-btn {
+  border-radius: 10px;
 }

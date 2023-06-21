@@ -8,18 +8,27 @@
     <title>Todos</title>
   </head>
   <body>
-    <header>
-      <h1>Todo</h1>
-      <input class="input-todo" type="text" />
-      <button class="add-todo-btn">New todo</button>
-    </header>
-    <main>
-      <div>
-        <h2>Todos for today</h2>
-
-        <div class="nasze-todosy-container"></div>
+    <div class="container">
+      <img src="./icon/topbar.png" />
+      <div class="top">
+        <h1>For today ...</h1>
       </div>
-    </main>
-    <script src="app.js"></script>
+      <form>
+        <input
+          class="input-todo"
+          type="text"
+          placeholder="What would you like to do ?"
+        />
+        <button type="submit" class="add-todo-btn">Add</button>
+      </form>
+
+      <main>
+        <div>
+          <div class="nasze-todosy-container"></div>
+        </div>
+        <button class="clearButton">Clear completed</button>
+      </main>
+      <script src="app.js"></script>
+    </div>
   </body>
 </html>
